@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample Projects - Premium Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .projects-header {
+        padding: 12rem 4rem 4rem;
+        text-align: center;
+      }
+      .category-title {
+        margin-top: 6rem;
+        margin-bottom: 3rem;
+        font-family: var(--font-heading);
+        font-size: 2.5rem;
+        color: var(--color-accent);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo magnetic">
+        <a href="index.html" style="color: inherit; text-decoration: none"
+          >Ashutosh</a
+        >
+      </div>
+      <button
+        class="nav-toggle"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav" data-nav-links>
+        <a href="index.html#work" class="nav-link">Services</a>
+        <a href="index.html#projects" class="nav-link">Projects</a>
+        <a href="projects.html" class="nav-link">Samples</a>
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="projects-header reveal-on-scroll">
+        <h1>My <em>Sample Projects</em></h1>
+        <p class="subtitle">Explore categorized live frontend previews</p>
+      </section>
+
+      <section class="work-section" style="padding-top: 0">
+        <h2 class="category-title reveal-on-scroll">E-Commerce</h2>
+        <div class="grid">
+          <div class="card reveal-on-scroll">
+            <h3>
+              <a
+                href="ecommerce.html"
+                style="
+                  color: inherit;
+                  text-decoration: none;
+                  border-bottom: 1px solid var(--color-accent);
+                "
+                >Premium Store</a
+              >
+            </h3>
+            <p>
+              A sample e-commerce storefront frontend preview showcasing a
+              modern shopping experience.
+            </p>
+          </div>
+        </div>
+
+        <h2 class="category-title reveal-on-scroll">Landing Pages</h2>
+        <div class="grid">
+          <div class="card reveal-on-scroll delay-1">
+            <h3>
+              <a
+                href="landing.html"
+                style="
+                  color: inherit;
+                  text-decoration: none;
+                  border-bottom: 1px solid var(--color-accent);
+                "
+                >SaaS Platform</a
+              >
+            </h3>
+            <p>
+              A high-conversion landing page design focusing on a digital
+              product or service.
+            </p>
+          </div>
+        </div>
+
+        <h2 class="category-title reveal-on-scroll">Blogs</h2>
+        <div class="grid">
+          <div class="card reveal-on-scroll delay-2">
+            <h3>
+              <a
+                href="blog.html"
+                style="
+                  color: inherit;
+                  text-decoration: none;
+                  border-bottom: 1px solid var(--color-accent);
+                "
+                >Minimalist Blog</a
+              >
+            </h3>
+            <p>
+              A clean, readable frontend layout designed specifically for
+              articles and content.
+            </p>
+          </div>
+        </div>
+
+        <h2 class="category-title reveal-on-scroll">Portfolio Websites</h2>
+        <div class="grid">
+          <div class="card reveal-on-scroll delay-3">
+            <h3>
+              <a
+                href="portfolio-sample.html"
+                style="
+                  color: inherit;
+                  text-decoration: none;
+                  border-bottom: 1px solid var(--color-accent);
+                "
+                >Creative Portfolio</a
+              >
+            </h3>
+            <p>
+              A visually-driven portfolio template for artists, designers, and
+              photographers to showcase their work.
+            </p>
+          </div>
+        </div>
+
+        <h2 class="category-title reveal-on-scroll">Corporate Websites</h2>
+        <div class="grid">
+          <div class="card reveal-on-scroll delay-4">
+            <h3>
+              <a
+                href="corporate-sample.html"
+                style="
+                  color: inherit;
+                  text-decoration: none;
+                  border-bottom: 1px solid var(--color-accent);
+                "
+                >Business Professional</a
+              >
+            </h3>
+            <p>
+              A clean and professional layout for a corporate or business
+              website, focusing on information and trust.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer reveal-on-scroll">
+      <p>
+        &copy; <span id="year"></span> Ashutosh Kaushik. All rights reserved.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

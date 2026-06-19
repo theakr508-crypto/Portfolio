@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-loader" data-page-loader aria-label="Loading portfolio">
+      <div class="loader-mark" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <p>Loading</p>
+    </div>
+
+    <header class="header">
+      <div class="logo magnetic">Ashutosh</div>
+      <button
+        class="nav-toggle"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav" data-nav-links>
+        <a href="#work" class="nav-link">Services</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="projects.html" class="nav-link">Samples</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <video autoplay loop muted playsinline class="hero-video">
+          <!-- Updated to a more reliable placeholder URL (Pixabay often blocks hotlinking) -->
+          <source src="hero.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content parallax" data-speed="0.25">
+          <p class="subtitle reveal-on-scroll">Hi, I am Ashutosh Kaushik</p>
+          <h1 class="reveal-on-scroll delay-1">
+            Crafting Digital <br /><em>Elegance</em>
+          </h1>
+          <a href="#about" class="btn magnetic reveal-on-scroll delay-2"
+            >Discover More</a
+          >
+        </div>
+      </section>
+
+      <!-- Focus / Services Section -->
+      <section id="work" class="work-section">
+        <h2 class="section-title reveal-on-scroll">My Focus</h2>
+        <div class="grid">
+          <div class="card reveal-on-scroll">
+            <span class="card-number">01</span>
+            <h3>Front-End Development</h3>
+            <p>
+              Building elegant, responsive, and interactive user interfaces.
+            </p>
+          </div>
+          <div class="card reveal-on-scroll delay-1">
+            <span class="card-number">02</span>
+            <h3>Back-End Integration</h3>
+            <p>Creating robust logic and seamless database structures.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Projects Section (Dynamically Loaded) -->
+      <section id="projects" class="projects-section">
+        <h2 class="section-title reveal-on-scroll">Featured Projects</h2>
+        <div id="projects-container" class="projects-grid">
+          <!-- Project cards will be injected here by script.js -->
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about-section">
+        <div class="about-grid">
+          <div class="about-heading reveal-on-scroll">
+            <h2>About Me</h2>
+            <div class="animated-line"></div>
+          </div>
+          <div class="about-text">
+            <p class="reveal-on-scroll delay-1">
+              I am Ashutosh Kaushik, a passionate creative developer focused on
+              crafting elegant, performant, and premium digital experiences. I
+              blend design with technology to build websites that look beautiful
+              and function flawlessly.
+            </p>
+            <p class="reveal-on-scroll delay-2">
+              With a strong foundation in both front-end aesthetics and back-end
+              logic, I aim to create seamless user journeys that leave a lasting
+              impression.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills-section">
+        <h2 class="reveal-on-scroll">My Arsenal</h2>
+        <div class="skills-container reveal-on-scroll delay-1">
+          <span class="skill-tag">HTML5 & CSS3</span>
+          <span class="skill-tag">JavaScript (ES6+)</span>
+          <span class="skill-tag">React.js</span>
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">Python & Flask</span>
+          <span class="skill-tag">SQL & PostgreSQL</span>
+          <span class="skill-tag">UI/UX Design</span>
+          <span class="skill-tag">Git & GitHub</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">AWS</span>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <h2 class="reveal-on-scroll">Let's Talk</h2>
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <div class="form-group reveal-on-scroll delay-1">
+              <input
+                type="text"
+                id="name"
+                class="form-input"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div class="form-group reveal-on-scroll delay-2">
+              <input
+                type="email"
+                id="email"
+                class="form-input"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group reveal-on-scroll delay-3">
+            <textarea
+              id="message"
+              class="form-input form-textarea"
+              placeholder="Your Message"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <div class="reveal-on-scroll delay-4">
+            <button type="submit" class="btn magnetic">Send Message</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer reveal-on-scroll">
+      <p>
+        &copy; <span id="year"></span> Ashutosh Kaushik. All rights reserved.
+      </p>
+    </footer>
+
+    <!-- Link to your existing JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>

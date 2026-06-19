@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Sample Preview</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .product-card {
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+        text-align: left;
+      }
+      .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+      .product-image {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+      }
+      .product-info {
+        padding: 1.5rem;
+      }
+      .buy-btn {
+        background: var(--color-text);
+        color: var(--color-bg);
+        border: none;
+        padding: 0.6rem 1.2rem;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: 500;
+        transition: background 0.3s;
+      }
+      .buy-btn:hover {
+        background: var(--color-accent);
+      }
+    </style>
+  </head>
+  <body style="padding: 2rem 5rem; background-color: #f9f9f9">
+    <header
+      style="
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #ddd;
+      "
+    >
+      <h1 style="font-size: 1.8rem; margin: 0">Luxeura.</h1>
+      <a href="projects.html" class="btn" style="padding: 0.8rem 1.5rem"
+        >Exit Preview</a
+      >
+    </header>
+
+    <h2 style="font-size: 2.5rem; margin-bottom: 3rem; text-align: center">
+      Featured Collection
+    </h2>
+    <div
+      style="
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 3rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      "
+    >
+      <div class="product-card">
+        <img
+          src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80"
+          alt="Minimalist Smartwatch"
+          class="product-image"
+        />
+        <div class="product-info">
+          <h3 style="font-size: 1.3rem; margin-bottom: 0.3rem">
+            Minimalist Smartwatch
+          </h3>
+          <p style="color: #888; font-size: 0.9rem; margin-bottom: 1.5rem">
+            Premium wearable tech
+          </p>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <span style="font-weight: 600; font-size: 1.2rem">$199.00</span>
+            <button class="buy-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <img
+          src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80"
+          alt="Wireless Headphones"
+          class="product-image"
+        />
+        <div class="product-info">
+          <h3 style="font-size: 1.3rem; margin-bottom: 0.3rem">
+            Noise-Cancelling Headphones
+          </h3>
+          <p style="color: #888; font-size: 0.9rem; margin-bottom: 1.5rem">
+            Immersive audio experience
+          </p>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <span style="font-weight: 600; font-size: 1.2rem">$249.00</span>
+            <button class="buy-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <img
+          src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=600&q=80"
+          alt="MacBook Pro"
+          class="product-image"
+        />
+        <div class="product-info">
+          <h3 style="font-size: 1.3rem; margin-bottom: 0.3rem">
+            Pro Creator Laptop
+          </h3>
+          <p style="color: #888; font-size: 0.9rem; margin-bottom: 1.5rem">
+            Power for professionals
+          </p>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <span style="font-weight: 600; font-size: 1.2rem">$1299.00</span>
+            <button class="buy-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahima Packers and Movers Preview</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family:
+          Inter,
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+        color: #18222f;
+        background: #f8f5ee;
+      }
+
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 22px 52px;
+        background: #ffffff;
+        border-bottom: 1px solid #e5dfd4;
+      }
+
+      .brand {
+        font-size: 22px;
+        font-weight: 800;
+        letter-spacing: 0.02em;
+        color: #0f4f5f;
+      }
+
+      .nav {
+        display: flex;
+        gap: 28px;
+        color: #667085;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      .hero {
+        min-height: 620px;
+        display: grid;
+        grid-template-columns: 1.05fr 0.95fr;
+        align-items: center;
+        gap: 48px;
+        padding: 64px 64px 80px;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 22px;
+        color: #bd6b1f;
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .eyebrow::before {
+        content: "";
+        width: 38px;
+        height: 2px;
+        background: #bd6b1f;
+      }
+
+      h1 {
+        margin: 0 0 24px;
+        max-width: 680px;
+        font-size: clamp(48px, 7vw, 88px);
+        line-height: 0.95;
+        letter-spacing: -0.03em;
+      }
+
+      p {
+        margin: 0;
+        max-width: 560px;
+        color: #5d6978;
+        font-size: 20px;
+        line-height: 1.65;
+      }
+
+      .actions {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        margin-top: 38px;
+      }
+
+      .primary,
+      .secondary {
+        padding: 16px 24px;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      .primary {
+        color: #ffffff;
+        background: #0f4f5f;
+      }
+
+      .secondary {
+        color: #0f4f5f;
+        border: 1px solid #0f4f5f;
+      }
+
+      .visual {
+        position: relative;
+        min-height: 420px;
+      }
+
+      .photo {
+        position: absolute;
+        inset: 0 0 40px 40px;
+        overflow: hidden;
+        border-radius: 22px;
+        background:
+          linear-gradient(rgba(15, 79, 95, 0.15), rgba(15, 79, 95, 0.15)),
+          url("https://images.unsplash.com/photo-1600518464441-9154a4dea21b?w=1200&q=80")
+            center / cover;
+        box-shadow: 0 28px 70px rgba(24, 34, 47, 0.18);
+      }
+
+      .stats {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: min(520px, 92%);
+        overflow: hidden;
+        border-radius: 14px;
+        background: #ffffff;
+        box-shadow: 0 22px 48px rgba(24, 34, 47, 0.14);
+      }
+
+      .stat {
+        padding: 24px;
+        border-right: 1px solid #ece7de;
+      }
+
+      .stat:last-child {
+        border-right: 0;
+      }
+
+      .stat strong {
+        display: block;
+        color: #bd6b1f;
+        font-size: 28px;
+        line-height: 1;
+      }
+
+      .stat span {
+        display: block;
+        margin-top: 8px;
+        color: #667085;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      @media (max-width: 900px) {
+        .hero {
+          grid-template-columns: 1fr;
+          padding: 42px 28px 56px;
+        }
+
+        .topbar {
+          padding: 18px 28px;
+        }
+
+        .nav {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">Mahima Packers and Movers</div>
+      <nav class="nav" aria-label="Preview navigation">
+        <span>Home</span>
+        <span>Services</span>
+        <span>Pricing</span>
+        <span>Contact</span>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <section>
+        <div class="eyebrow">Door to door relocation</div>
+        <h1>Safe moving for homes and businesses.</h1>
+        <p>
+          Packing, loading, transport, unloading, and setup support handled by a
+          dependable relocation team.
+        </p>
+        <div class="actions">
+          <div class="primary">Get Quote</div>
+          <div class="secondary">Call Now</div>
+        </div>
+      </section>
+
+      <section class="visual" aria-label="Moving service preview">
+        <div class="photo"></div>
+        <div class="stats">
+          <div class="stat">
+            <strong>24/7</strong>
+            <span>Support</span>
+          </div>
+          <div class="stat">
+            <strong>100%</strong>
+            <span>Packing</span>
+          </div>
+          <div class="stat">
+            <strong>Fast</strong>
+            <span>Delivery</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
