@@ -5,6 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Corporate Website Sample</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      @media (max-width: 768px) {
+        /* Reduce body wrapper paddings */
+        div[style*="padding: 2rem 5rem"] {
+          padding: 1.5rem 1.25rem !important;
+        }
+        div[style*="padding: 5rem"] {
+          padding: 3rem 1.25rem !important;
+        }
+        /* Make header layout stack nicely */
+        header[style*="display: flex"] {
+          flex-direction: column !important;
+          gap: 1.5rem !important;
+          text-align: center !important;
+          padding: 1rem 0 !important;
+        }
+        header nav {
+          display: flex !important;
+          flex-wrap: wrap !important;
+          justify-content: center !important;
+          gap: 1rem !important;
+        }
+        header nav a {
+          margin-left: 0 !important;
+        }
+        /* Hero text adjustments */
+        div[style*="z-index: 3"] h2 {
+          font-size: 2.2rem !important;
+        }
+        div[style*="z-index: 3"] p {
+          font-size: 1.05rem !important;
+        }
+        /* Hero height */
+        div[style*="height: 500px"] {
+          height: auto !important;
+          min-height: 400px;
+          padding: 4rem 0 !important;
+        }
+      }
+    </style>
   </head>
   <body style="padding: 0; margin: 0; background-color: #f8f9fa">
     <div style="max-width: 1200px; margin: 0 auto; padding: 2rem 5rem">

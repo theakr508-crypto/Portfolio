@@ -122,4 +122,4 @@ if __name__ == '__main__':
     port = int(os.getenv("PORT", 5000))
     is_debug = os.getenv("FLASK_DEBUG", "True").lower() in ("true", "1", "t")
     logger.info(f"Starting Python Flask server on port {port}...")
-    socketio.run(app, host="0.0.0.0", port=port, debug=is_debug)
+    socketio.run(app, host="0.0.0.0", port=port, debug=is_debug, allow_unsafe_werkzeug=True)

@@ -41,6 +41,19 @@
       .buy-btn:hover {
         background: var(--color-accent);
       }
+
+      @media (max-width: 768px) {
+        body {
+          padding: 2rem 1.25rem !important;
+        }
+        header {
+          margin-bottom: 2rem !important;
+        }
+        div[style*="grid-template-columns"] {
+          grid-template-columns: 1fr !important;
+          gap: 2rem !important;
+        }
+      }
     </style>
   </head>
   <body style="padding: 2rem 5rem; background-color: #f9f9f9">
